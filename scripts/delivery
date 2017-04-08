@@ -1,0 +1,18 @@
+#!/bin/bash
+bucket=$1
+
+if [ -z $bucket ]
+then
+    echo "Invalid bucket name. trye ./scripts/delivery bucket_name"
+    exit
+fi
+echo "Building"
+source scripts/build
+echo "Packaging"
+source scripts/package
+echo "Sending to Google Cloud Storage"
+gsutil cp ./gogcsclient.zip gs://$bucket/gogcsclient.zip
+echo "Removing bin files"
+rm gogcsclient.zip
+rm gogcsclient
+rm gogcsclient.exe

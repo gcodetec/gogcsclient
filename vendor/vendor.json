@@ -1,0 +1,25 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "T1O/kJRpW/3saSjpiVobZ5anPAY=",
+			"path": "cloud.google.com/go/storage",
+			"revision": "e89968106bfb1f9fe3f05a5ca644866acd15edf8",
+			"revisionTime": "2016-08-17T20:45:56Z"
+		},
+		{
+			"checksumSHA1": "8D41Y1ZTK8W3pxzvp1eH9u3CNl4=",
+			"path": "github.com/spf13/viper",
+			"revision": "84f94806c67f59dd7ae87bc5351f7a9c94a4558d",
+			"revisionTime": "2017-03-15T13:43:09Z"
+		},
+		{
+			"checksumSHA1": "9jjO5GjLa0XF/nfWihF02RoH4qc=",
+			"path": "golang.org/x/net/context",
+			"revision": "1358eff22f0dd0c54fc521042cc607f6ff4b531a",
+			"revisionTime": "2016-09-01T04:28:38Z"
+		}
+	],
+	"rootPath": "github.com/gcodetec/gogcsclient"
+}

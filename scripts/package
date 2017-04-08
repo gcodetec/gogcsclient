@@ -1,0 +1,2 @@
+#/bin/bash
+zip -v ./gogcsclient gogcsclient.exe config.example.yml ./scripts/run scripts/run.bat credential.json
