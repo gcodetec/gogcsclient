@@ -28,7 +28,9 @@ func uploadFile(path string, info os.FileInfo, err error) error {
 		return nil
 	}
 	if !info.IsDir() {
-		uploadToGCS(path, destPath(path))
+		dest := destPath(path)
+		dest = strings.Replace(dest, "\\", "/", -1)
+		uploadToGCS(path, dest)
 	}
 	return nil
 }

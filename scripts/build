@@ -1,3 +1,4 @@
 #! /bin/bash
-go build -v .
-GOOS=windows GOARCH=amd64 go build -v .
+go build -o gcsclient -v .
+GOOS=windows GOARCH=amd64 go build -o gcsclient64.exe -v .
+GOOS=windows GOARCH=386 go build -o gcsclient32.exe -v .

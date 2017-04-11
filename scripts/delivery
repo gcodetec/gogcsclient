@@ -14,5 +14,6 @@ echo "Sending to Google Cloud Storage"
 gsutil cp ./gogcsclient.zip gs://$bucket/gogcsclient.zip
 echo "Removing bin files"
 rm gogcsclient.zip
-rm gogcsclient
-rm gogcsclient.exe
+rm gcsclient
+rm gcsclient64.exe
+rm gcsclient32.exe
